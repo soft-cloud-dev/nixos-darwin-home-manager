@@ -1,0 +1,54 @@
+
+# Nix-specific
+result
+result-*
+.direnv
+
+# Home Manager
+.home-manager-generation
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Logs
+*.log
+
+# Nix build outputs
+result
+result-*
+
+# Python-related (for custom Python packages)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node.js (for nodejs_22)
+node_modules/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Squid cache and logs (from squid.nix)
+.squid/cache/
+.squid/logs/
+
+# AdGuard Home data (from adguardhome.nix)
+.adguardhome/
+
+# nix-index database
+.cache/nix-index
+
+# Any local overrides or user-specific configs
+*.local
+*.override
+
+# Flake-related
+.envrc
+
