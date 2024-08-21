@@ -33,7 +33,8 @@
     gh
     lazygit
     nodejs_22
-    python3
+    python312
+    pyenv
     poetry
     cachix
     nil
@@ -54,9 +55,59 @@
     any-nix-shell
     # Graphviz for dot
     graphviz
+    # Azure CLI
+    azure-cli
+    azure-functions-core-tools
+    azure-cli-extensions.workloads
+    azure-cli-extensions.staticwebapp
+    azure-cli-extensions.vmware
+    # Typescript
+    typescript
+    # AI/ML
+    libtensorflow
+    ollama
+    llm
+    python312Packages.numpy
+    python312Packages.scipy
+    python312Packages.matplotlib
+    python312Packages.pandas
+    python312Packages.requests
+    python312Packages.torchvision
+    python312Packages.torchvision
+    python312Packages.llama-index
+    python312Packages.llama-index-cli
+    python312Packages.llama-index-core
+    python312Packages.llama-index-readers-json
+    python312Packages.llama-index-readers-txtai
+    python312Packages.llama-index-readers-file
+    python312Packages.llama-index-readers-s3
+    python312Packages.llama-index-program-openai
+    python312Packages.llama-index-llms-ollama
+    python312Packages.llama-index-llms-openai
+    python312Packages.llama-index-readers-txtai
+    python312Packages.llama-index-readers-database
+    python312Packages.llama-index-llms-openai-like
+    python312Packages.llama-index-embeddings-openai
+    python312Packages.llama-index-embeddings-ollama
+    python312Packages.llama-index-embeddings-google
+    python312Packages.llama-index-embeddings-gemini
+    python312Packages.llama-index-vector-stores-qdrant
+    python312Packages.llama-index-vector-stores-postgres
+    python312Packages.llama-index-vector-stores-google
+    python312Packages.llama-index-vector-stores-chroma
+    python312Packages.llama-index-readers-llama-parse
+    python312Packages.llama-index-question-gen-openai
+    python312Packages.llama-index-multi-modal-llms-openai
+    python312Packages.llama-index-indices-managed-llama-cloud
+    python312Packages.llama-index-graph-stores-neptune
+    python312Packages.llama-index-graph-stores-nebula
+    python312Packages.llama-index-embeddings-huggingface
+    python312Packages.llama-index-agent-openai
+    python312Packages.llama-index-llms-ollama
+    python312Packages.llama-index-llms-openai
     # Custom Python package
     (python3Packages.buildPythonPackage rec {
-      pname = "xontrib-vox";
+      name = "xontrib-vox";
       version = "0.0.1";
       src = fetchFromGitHub {
         owner = "xonsh";
